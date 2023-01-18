@@ -8,8 +8,7 @@ function Header() {
   return (
     <div className="header">
       <Button onClick={onClose}>Закрыть</Button>
-      <span className="username">{user?.username || "ошибка"}</span>
-      <span className="username">{user}</span>
+      <span className="username">{user?.username}</span>
     </div>
   );
 }
