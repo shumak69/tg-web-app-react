@@ -13,6 +13,7 @@ function Form() {
       street,
       subject,
     };
+    console.log(JSON.stringify(data));
     tg.sendData(JSON.stringify(data));
   }, []);
 
