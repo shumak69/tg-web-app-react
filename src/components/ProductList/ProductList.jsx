@@ -30,7 +30,7 @@ function ProductList() {
       totalPrice: getTotalPrice(addedItems),
       queryId,
     };
-    fetch("https:/tg-web-bot.glitch.me/web-data", {
+    fetch("https://tg-web-bot.glitch.me/web-data", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
