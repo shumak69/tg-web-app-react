@@ -5,12 +5,12 @@ function Form() {
   const [city, setCity] = useState("");
   const [street, setStreet] = useState("");
   const [subject, setSubject] = useState("physical");
-  const tg = useTelegram();
+  const { tg } = useTelegram();
 
   useEffect(() => {
-    // tg.MainButton.setParams({
-    //   text: "Отправить данные",
-    // });
+    tg.MainButton.setParams({
+      text: "Отправить данные",
+    });
     console.log(tg.MainButton);
   }, []);
 
