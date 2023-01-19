@@ -22,7 +22,7 @@ function Form() {
     return () => {
       tg.offEvent("mainButtonClicked", onSendData);
     };
-  }, []);
+  }, [onSendData]);
 
   useEffect(() => {
     tg.MainButton.setParams({
