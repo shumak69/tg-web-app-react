@@ -13,7 +13,6 @@ function Form() {
       street,
       subject,
     };
-    console.log(JSON.stringify(data));
     tg.sendData(JSON.stringify(data));
   }, []);
 
@@ -54,6 +53,7 @@ function Form() {
       <h3>Введите ваши данные </h3>
       <input type="text" placeholder="Город" className="input" value={city} onChange={onChangeCity} />
       <input type="text" placeholder="Улица" className="input" value={street} onChange={onChangeStreet} />
+      <span>{city}</span>
       <select className="select" value={subject} onChange={onChangeSubject}>
         <option value="physical">Физ. лицо</option>
         <option value="legal">Юр. лицо</option>
