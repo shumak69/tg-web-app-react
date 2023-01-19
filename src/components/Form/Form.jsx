@@ -13,6 +13,7 @@ function Form() {
       street,
       subject,
     };
+
     tg.sendData(JSON.stringify(data));
   }, [city, street, subject]);
 
@@ -27,7 +28,6 @@ function Form() {
     tg.MainButton.setParams({
       text: "Отправить данные",
     });
-    console.log(tg.MainButton);
   }, []);
 
   useEffect(() => {
