@@ -71,7 +71,7 @@ function ProductList() {
   return (
     <div className="list">
       {products.map((item) => (
-        <ProductItem product={item} onAdd={onAdd} className="item" />
+        <ProductItem product={item} onAdd={onAdd} className="item" key={item.id} addedItems={addedItems} />
       ))}
     </div>
   );

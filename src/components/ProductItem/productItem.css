@@ -21,4 +21,12 @@
 
 .add-btn {
   width: 100%;
+  margin-top: 5px;
+}
+
+.add-btn span {
+  font-size: 24px;
+}
+.add-btn.active{
+  background-color: rgb(19, 201, 83);
 }
