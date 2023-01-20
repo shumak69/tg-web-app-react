@@ -1,7 +1,7 @@
 import "./productItem.css";
 import Button from "../Button/Button";
 import { useState } from "react";
-function ProductItem({ product, className, onAdd, addedItems }) {
+function ProductItem({ product, className, onAdd }) {
   const [isAdded, setIsAdded] = useState(false);
   const onAddHandler = () => {
     setIsAdded((state) => !state);
@@ -9,7 +9,9 @@ function ProductItem({ product, className, onAdd, addedItems }) {
   };
   return (
     <div className={"product " + className}>
-      <div className="img"></div>
+      <div className="img">
+        <img src={product.img} alt={product.title} className="img" />
+      </div>
       <div className="title">{product.title}</div>
       <div className="description">{product.description}</div>
       <div className="price">
